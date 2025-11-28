@@ -23,7 +23,7 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Simple e-commerce API with NestJS, TypeORM, and GraphQL
 
 ## Project setup
 
