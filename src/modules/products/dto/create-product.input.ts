@@ -9,8 +9,13 @@ export class CreateProductInput {
 @IsString()
 name: string; 
  
+@Field(() => Number)  
+price: number;  
 
-@Field(() => Float)  
-price: number; 
+@Field() 
+description: string; 
 
+@Field()  
+@IsString()
+categoryName: string;
 }

@@ -4,7 +4,8 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { GraphQLModule } from '@nestjs/graphql';
 import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
-import { ProductsModule } from './products/products.module';
+import { ProductsModule } from './modules/products/products.module';
+import { CategoriesModule } from './modules/categories/categories.module';
 
 
 @Module({
@@ -33,7 +34,8 @@ import { ProductsModule } from './products/products.module';
         synchronize: true, // só para dev, não use em produção
       }),
     }),
-    ProductsModule, 
+    ProductsModule,
+    CategoriesModule, 
   ],
   providers: [AppService],
 })
